@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defualts:
+      run:
+      working-directory: ./score-gateway
     
     strategy:
       matrix:
