@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defualts:
       run:
-      working-directory: ./score-gateway
+        working-directory: ./score-gateway
     
     strategy:
       matrix:
