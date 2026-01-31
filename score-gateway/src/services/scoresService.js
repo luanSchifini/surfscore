@@ -2,9 +2,8 @@ const axios = require('axios');
 const mapRulesEngineScoresResponse = require('../utils/mappers');
 
 class ScoresService {
-    constructor(pythonEngineUrl) {
-        this.pythonEngineUrl = process.env.PYTHON_ENGINE_URL || 'http://localhost:5000/';
-    }
+
+    pythonEngineUrl = process.env.PYTHON_ENGINE_URL || 'http://localhost:5000/';
     
     async calculateFinalScore(scoresPayload) {
         // Verifies the payload structure
